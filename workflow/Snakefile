@@ -1,0 +1,37 @@
+configfile: "config/config.yaml"
+
+include: "rules/install_paup.smk"
+include: "rules/annot_gbk_to_faa.smk"
+include: "rules/annot_identify.smk"
+include: "rules/annot_overlap_genes.smk"
+include: "rules/annot_overlap_regions.smk"
+include: "rules/interpro_run.smk"
+include: "rules/interpro_identify.smk"
+include: "rules/motifs_search.smk"
+include: "rules/motifs_identify.smk"
+include: "rules/rbhb_create_dbs.smk"
+include: "rules/rbhb_run_blast.smk"
+include: "rules/rbhb_get_best_hits.smk"
+include: "rules/rbhb_find_best_reciprocal.smk"
+include: "rules/rbhb_add_best_hit_info.smk"
+include: "rules/predict_family.smk"
+include: "rules/predict_subfamily.smk"
+include: "rules/phylo_add_rbhb_sublineage.smk"
+include: "rules/phylo_extract_domains.smk"
+include: "rules/phylo_align_domains.smk"
+include: "rules/phylo_add_paup_commands.smk"
+include: "rules/phylo_run_paup.smk"
+include: "rules/phylo_draw_tree.smk"
+include: "rules/phylo_combine.smk"
+include: "rules/predict_combine.smk"
+include: "rules/results_to_xlsx.smk"
+include: "rules/results_to_tsv.smk"
+include: "rules/results_summary.smk"
+
+
+rule all:
+    input:
+        "workflow/bin/paup4a168_ubuntu64",
+        expand("results/combined/{strain}_results.tsv", strain=config["strains"]),
+        "results/results_combined.xlsx",
+        "results/results_summary.xlsx"

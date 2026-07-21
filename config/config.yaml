@@ -1,0 +1,61 @@
+---
+strains: ["0072", "0153", "0157", "0052", "0145", "0155"]
+
+interpro:
+  folder: "/scratch/src/interproscan-5.59-91.0"
+  threads: 10 
+  search: Pfam
+  analyses: TMHMM SignalP_GRAM_POSITIVE
+  flags: "-f TSV,JSON,GFF3 -dp"
+
+motifs:
+  PE-PGRS:
+    regex: ['GGA', 'GGN']
+    min_matches: 16
+  PPE-SVP:
+    regex: ['G..SVP..W']
+    min_matches: 1
+  PPE-MPTR:
+    regex: ['N.G.GN.G']
+    min_matches: 3
+  PPE-PPW:
+    regex: ['GF.GT', 'P..P..W']
+    min_matches: 2
+
+domains:
+  PE:
+    nterm_aa: 95
+    regex: '(^|[^\w])PE($|[^A-Za-z])'
+    outgroup_regex: '(^|[^\w])PE35($|[^A-Za-z])'
+    sublineage_colors:
+      I:   '#9467bd'
+      II:  '#2ca02c'
+      III: '#1f77b4'
+      IV:  '#d62728'
+      V:   '#bcbd22'
+  PPE:
+    nterm_aa: 180
+    regex: '(^|[^\w])PPE($|[^A-Za-z])'
+    outgroup_regex: '(^|[^\w])PPE68($|[^A-Za-z])'
+    sublineage_colors:
+      I:   '#9467bd'
+      II:  '#2ca02c'
+      III: '#1f77b4'
+      IV:  '#d62728'
+      V:   '#bcbd22'
+
+blastp:
+  threads: 10
+  flags: "-word_size 3"
+
+phylogeny:
+  pseudo: False
+  seed: 4
+  bootstrap: 1000
+  search: "NJ"
+
+overlap:
+  gene_columns: ['Illumina', 'Miss %']
+
+summary:
+  pseudo: False

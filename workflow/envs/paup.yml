@@ -1,0 +1,31 @@
+name: paup
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  - _openmp_mutex=4.5=20_gnu
+  - ca-certificates=2026.6.17=hbd8a1cb_0
+  - certifi=2019.11.28=py27h8c360ce_1
+  - ld_impl_linux-64=2.46.1=bootstrap_ha15bf96_2
+  - libffi=3.2.1=he1b5a44_1007
+  - libgcc=15.2.0=he0feb66_19
+  - libgcc-ng=15.2.0=h69a702a_19
+  - libgfortran4=7.5.0=h14aa051_20
+  - libgomp=15.2.0=he0feb66_19
+  - libsqlite=3.46.0=hde9e2c9_0
+  - libstdcxx=15.2.0=h934c35e_19
+  - libstdcxx-ng=15.2.0=hdf11a46_19
+  - libzlib=1.2.13=h4ab18f5_6
+  - ncurses=6.6=hdb14827_0
+  - openssl=1.1.1w=hd590300_0
+  - pip=20.1.1=pyh9f0ad1d_0
+  - python=2.7.15=h5a48372_1011_cpython
+  - python_abi=2.7=1_cp27mu
+  - readline=8.3=h853b02a_0
+  - setuptools=44.0.0=py27_0
+  - sqlite=3.46.0=h6d4b2fc_0
+  - tk=8.6.13=noxft_h4845f30_101
+  - wheel=0.37.1=pyhd8ed1ab_0
+  - zlib=1.2.13=h4ab18f5_6
+prefix: /home/bioinf/miniforge3/envs/paup

@@ -1,0 +1,10 @@
+results*/**
+resources/**
+logs/**
+workflow/bin/**
+.snakemake
+.snakemake/**
+temp/**
+report.html
+dag.*
+rulegraph.png

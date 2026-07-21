@@ -1,0 +1,12 @@
+
+BEGIN PAUP;
+outgroup {outgroup};
+set root=outgroup;
+set criterion=distance;
+bootstrap nreps={nreps} search={search} conLevel=50 brLens=yes keepAll=yes treefile='{output_trees}' seed={seed};
+savetrees from=1 to=1 root=yes brLens=yes format=Newick file='{output_consensus}';
+set maxtrees={nreps};
+gettrees storeBrLens=yes file='{output_trees}';
+contree all/ strict=no majRule=yes percent=50 saveAsRooted=yes format=Newick treefile='{output_collapsed}';
+END;
+
