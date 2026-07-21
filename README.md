@@ -4,7 +4,7 @@ This Snakemake pipeline identifies and classifies PE and PPE genes in *M. tuberc
 ## Software Dependencies
 By default, all dependencies are installed automatically using conda except for InterProScan, for which this is unfortunately not possible due to reliance on licensed components (SignalP and TMHMM) and the size of the database. InterProScan therefore has to be downloaded separately and the path to its folder (the folder containing `interproscan.sh`) has to be adapted in `config/config.yml`. To install InterProScan, follow the [official instructions](https://interproscan-docs.readthedocs.io/en/v5/HowToDownload.html), including the steps to [install SignalP and TMHMM](https://interproscan-docs.readthedocs.io/en/v5/ActivatingLicensedAnalyses.html). All dependencies required to run InterProScan are automatically installed with conda.
 
-If the prediction of signal peptides and transmembrane domains is not required, the installation of SignalP and TMHMM can be ommitted. In this case, `TMHMM` and `SignalP_GRAM_POSITIVE` may be removed from the `interpro:analyses` list in `config/config.yaml` as these columns will always be empty.
+> **NOTE:** If the prediction of signal peptides and transmembrane domains is not required, the installation of SignalP and TMHMM can be ommitted. In this case, `TMHMM` and `SignalP_GRAM_POSITIVE` may be removed from the `interpro:analyses` list in `config/config.yaml` as these columns will always be empty.
 
 To disable automatic dependency management with conda, remove `--use-conda` from `run.sh` and make sure the dependencies are installed system-wide:
 ```
@@ -23,7 +23,7 @@ The input data to reproduce the results from an analysis of 6 *M. tuberculosis* 
 
 The filenames have to match the `strains` list in `config/config.yaml` (not including the file extension). Therefore, to analyze own genomes, add the GenBank files with the correct extension to the `data/annotation` folder and update the `strains` list in `config/config.yaml`. Also make sure to create a corresponding file in `data/genes` and `data/regions`.
 
-> **NOTE:**  If you are not interested in the overlap with a subset of annotated genes or specific regions, just create an empty file for the strain in the respective directory: `touch data/genes/{strain}.tsv data/regions/{strain}.bed`
+> **NOTE:** If you are not interested in the overlap with a subset of annotated genes or specific regions, just create an empty file for the strain in the respective directory: `touch data/genes/{strain}.tsv data/regions/{strain}.bed`
 
 ### Static
 An additional subfolder (`data/orthologs`) contains the classification of PE and PPE genes in strain H37Rv from [Ates 2020](https://doi.org/10.1111/mmi.14409) as a tsv file and the corresponding protein sequences in fasta format. This folder can generally be left unchanged except if the usage of a different or updated classification of PE and PPE genes is desired.
@@ -34,7 +34,7 @@ Once the input data is ready and Snakemake is installed, the analysis can be sta
 ./run.sh
 ```
 
-> **NOTE:**  If you are not behind a corporate proxy, you may speed up the InterProScan analysis by enabling the precalculated match lookup service. To do so, remove the `-dp` flag from `interproscan:flags` in `config/config.yaml`.
+> **NOTE:** It is also possible to include additional InterProScan results in the final output. For this, extend the `interpro:analyses` list in `config/config.yaml` with terms found in the 4th column in `results/interpro/run/{strain}/{strain}.faa.tsv` after running the pipeline a first time.
 
 After successfully running the pipeline, an HTML report of the results may be generated with
 ```
