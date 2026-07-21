@@ -31,7 +31,6 @@ include: "rules/results_summary.smk"
 
 rule all:
     input:
-        "workflow/bin/paup4a168_ubuntu64",
         expand("results/combined/{strain}_results.tsv", strain=config["strains"]),
         "results/results_combined.xlsx",
         "results/results_summary.xlsx"

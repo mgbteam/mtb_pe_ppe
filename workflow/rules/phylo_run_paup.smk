@@ -1,5 +1,6 @@
 rule phylo_run_paup:
     input:
+        "workflow/bin/paup4a168_ubuntu64",
         "results/phylo/add_paup_commands/{domain}/{strain}_{domain}_aligned_paup.nxs"
     output:
         bootstrap_trees = "results/phylo/run_paup/{domain}/{strain}/bootstrap.trees",
