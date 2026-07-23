@@ -6,7 +6,7 @@ import csv
 from Bio import SeqIO
 
 parser = argparse.ArgumentParser(
-    description="Add RBHB subfamily information to sequence IDs"
+    description="Add RBBH subfamily information to sequence IDs"
 )
 parser.add_argument(
     "-f", "--fasta", required=True,

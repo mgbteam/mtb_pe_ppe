@@ -1,8 +1,8 @@
-rule rbhb_create_strain_db:
+rule rbbh_create_strain_db:
     input:
         "results/annot/gbk_to_faa/{strain}.faa"
     output:
-        directory("results/rbhb/blast_dbs/{strain}")
+        directory("results/rbbh/blast_dbs/{strain}")
     conda:
         "../envs/blast.yml"
     shell:
@@ -14,11 +14,11 @@ rule rbhb_create_strain_db:
         """
 
 
-rule rbhb_create_orthologs_db:
+rule rbbh_create_orthologs_db:
     input:
         "data/orthologs/orthologs.faa"
     output:
-        directory("results/rbhb/blast_dbs/Orthologs")
+        directory("results/rbbh/blast_dbs/Orthologs")
     conda:
         "../envs/blast.yml"
     shell:

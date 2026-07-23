@@ -1,9 +1,9 @@
-rule rbhb_run_blast_fwd:
+rule rbbh_run_blast_fwd:
     input:
-        strain_db = "results/rbhb/blast_dbs/{strain}",
-        orthologs_db = "results/rbhb/blast_dbs/Orthologs"
+        strain_db = "results/rbbh/blast_dbs/{strain}",
+        orthologs_db = "results/rbbh/blast_dbs/Orthologs"
     output:
-        "results/rbhb/blast_fwd/{strain}_vs_Orthologs.tsv"
+        "results/rbbh/blast_fwd/{strain}_vs_Orthologs.tsv"
     threads:
         config["blastp"]["threads"]
     params:
@@ -23,12 +23,12 @@ rule rbhb_run_blast_fwd:
         """
 
 
-rule rbhb_run_blast_rev:
+rule rbbh_run_blast_rev:
     input:
-        orthologs_db = "results/rbhb/blast_dbs/Orthologs",
-        strain_db = "results/rbhb/blast_dbs/{strain}"
+        orthologs_db = "results/rbbh/blast_dbs/Orthologs",
+        strain_db = "results/rbbh/blast_dbs/{strain}"
     output:
-        "results/rbhb/blast_rev/Orthologs_vs_{strain}.tsv"
+        "results/rbbh/blast_rev/Orthologs_vs_{strain}.tsv"
     threads:
         config["blastp"]["threads"]
     params:

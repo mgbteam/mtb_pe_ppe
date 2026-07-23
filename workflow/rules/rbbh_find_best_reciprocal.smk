@@ -1,9 +1,9 @@
-rule rbhb_find_best_reciprocal:
+rule rbbh_find_best_reciprocal:
     input:
-        fwd="results/rbhb/best_hits_fwd/{strain}_vs_Orthologs_best_hits.tsv",
-        rev="results/rbhb/best_hits_rev/Orthologs_vs_{strain}_best_hits.tsv"
+        fwd="results/rbbh/best_hits_fwd/{strain}_vs_Orthologs_best_hits.tsv",
+        rev="results/rbbh/best_hits_rev/Orthologs_vs_{strain}_best_hits.tsv"
     output:
-        "results/rbhb/find_best_reciprocal/{strain}_rbhb.tsv"
+        "results/rbbh/find_best_reciprocal/{strain}_rbbh.tsv"
     shell:
         """
         echo "Locus Tag\tDB Hit\tUniProtKB\te-value\tbitscore" > '{output}'

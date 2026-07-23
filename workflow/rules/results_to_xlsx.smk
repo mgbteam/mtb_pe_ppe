@@ -4,7 +4,7 @@ result_dict_xlsx = {
     'Overlap': 'results/annot/overlap_regions/{strain}_overlap.tsv',
     'InterProScan': 'results/interpro/identify/{strain}_interpro.tsv',
     'Motif Search': 'results/motifs/identify/{strain}_motifs.tsv',
-    'Reciprocal Best BLAST Hit': 'results/rbhb/add_best_hit_info/{strain}_rbhb.tsv',
+    'Reciprocal Best BLAST Hit': 'results/rbbh/add_best_hit_info/{strain}_rbbh.tsv',
 }
 
 

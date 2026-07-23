@@ -4,7 +4,7 @@ result_dict_tsv = {
     'Overlap': 'results/annot/overlap_regions/{strain}_overlap.tsv',
     'InterPro': 'results/interpro/identify/{strain}_interpro.tsv',
     'Motifs': 'results/motifs/identify/{strain}_motifs.tsv',
-    'RBHB': 'results/rbhb/add_best_hit_info/{strain}_rbhb.tsv',
+    'RBBH': 'results/rbbh/add_best_hit_info/{strain}_rbbh.tsv',
 }
 
 

@@ -1,6 +1,6 @@
 rule phylo_add_paup_commands:
     input: 
-        fasta = "results/phylo/add_rbhb_sublineage/{domain}/{strain}_{domain}_domains.faa",
+        fasta = "results/phylo/add_rbbh_sublineage/{domain}/{strain}_{domain}_domains.faa",
         alignment = "results/phylo/align_domains/{domain}/{strain}_{domain}_aligned.nxs"
     output:
         "results/phylo/add_paup_commands/{domain}/{strain}_{domain}_aligned_paup.nxs"
