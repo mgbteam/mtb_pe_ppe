@@ -28,9 +28,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="7.9499324"
-     inkscape:cx="-75.032085"
-     inkscape:cy="-200.25328"
+     inkscape:zoom="1.4053628"
+     inkscape:cx="419.46465"
+     inkscape:cy="1443.7553"
      inkscape:window-width="1920"
      inkscape:window-height="1151"
      inkscape:window-x="0"
@@ -430,12 +430,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="354.21"
+         x="354.20999"
          y="-879.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text129"
-         style="fill:#000000;fill-opacity:1">rbhb_add_best_hit_info</text>
+         style="fill:#000000;fill-opacity:1">rbbh_add_best_hit_info</text>
     </g>
     <!-- 5&#45;&gt;1 -->
     <g
@@ -535,12 +535,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="422.21"
+         x="422.20999"
          y="-663.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text164"
-         style="fill:#000000;fill-opacity:1">phylo_add_rbhb_subf</text>
+         style="fill:#000000;fill-opacity:1">phylo_add_rbbh_subf</text>
     </g>
     <!-- 5&#45;&gt;24 -->
     <g
@@ -597,12 +597,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="354.21"
+         x="354.20999"
          y="-951.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text185"
-         style="fill:#000000;fill-opacity:1">rbhb_find_best_reciprocal</text>
+         style="fill:#000000;fill-opacity:1">rbbh_find_best_reciprocal</text>
     </g>
     <!-- 6&#45;&gt;5 -->
     <g
@@ -640,12 +640,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="406.21"
+         x="406.20999"
          y="-1023.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text199"
-         style="fill:#000000;fill-opacity:1">rbhb_get_best_hits_fwd</text>
+         style="fill:#000000;fill-opacity:1">rbbh_get_best_hits_fwd</text>
     </g>
     <!-- 7&#45;&gt;6 -->
     <g
@@ -683,12 +683,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="406.21"
+         x="406.20999"
          y="-1095.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text213"
-         style="fill:#000000;fill-opacity:1">rbhb_run_blast_fwd</text>
+         style="fill:#000000;fill-opacity:1">rbbh_run_blast_fwd</text>
     </g>
     <!-- 8&#45;&gt;7 -->
     <g
@@ -726,12 +726,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="261.21"
+         x="261.20999"
          y="-1167.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text227"
-         style="fill:#000000;fill-opacity:1">rbhb_create_strain_db</text>
+         style="fill:#000000;fill-opacity:1">rbbh_create_strain_db</text>
     </g>
     <!-- 9&#45;&gt;8 -->
     <g
@@ -769,12 +769,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="263.21"
+         x="263.20999"
          y="-1095.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text241"
-         style="fill:#000000;fill-opacity:1">rbhb_run_blast_rev</text>
+         style="fill:#000000;fill-opacity:1">rbbh_run_blast_rev</text>
     </g>
     <!-- 9&#45;&gt;13 -->
     <g
@@ -937,12 +937,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="408.21"
+         x="408.20999"
          y="-1167.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text297"
-         style="fill:#000000;fill-opacity:1">rbhb_create_orthologs_db</text>
+         style="fill:#000000;fill-opacity:1">rbbh_create_orthologs_db</text>
     </g>
     <!-- 11&#45;&gt;8 -->
     <g
@@ -999,12 +999,12 @@
       <text
          xml:space="preserve"
          text-anchor="middle"
-         x="263.21"
+         x="263.20999"
          y="-1023.62"
          font-family="sans"
-         font-size="10.00"
+         font-size="10px"
          id="text318"
-         style="fill:#000000;fill-opacity:1">rbhb_get_best_hits_rev</text>
+         style="fill:#000000;fill-opacity:1">rbbh_get_best_hits_rev</text>
     </g>
     <!-- 12&#45;&gt;6 -->
     <g
