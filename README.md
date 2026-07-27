@@ -1,6 +1,18 @@
 # *M. tuberculosis* PE/PPE Snakemake pipeline
 This Snakemake pipeline identifies and classifies PE and PPE genes in *M. tuberculosis* genomes. To do so, it relies on the provided genome annotation, predictions by InterProScan, motif searches, phylogenetic analysis of n-terminal domains as described ([van Pittius et al. 2006](https://doi.org/10.1186/1471-2148-6-95)) and a manually curated set of PE and PPE genes in the strain H37Rv ([Ates 2020](https://doi.org/10.1111/mmi.14409)). The output is a formatted Excel table containing all results as well as plots of the phylogenetic trees based on the n-terminal domains.
 
+[TOC]: #
+## Table of Contents
+- [Software Dependencies](#software-dependencies)
+- [Input Data](#input-data)
+  - [Variable](#variable)
+  - [Static](#static)
+- [Running the Analysis](#running-the-analysis)
+- [Output](#output)
+- [Rulegraph](#rulegraph)
+- [Application to Other Gene Families](#application-to-other-gene-families)
+- [Citation](#citation)
+
 ## Software Dependencies
 By default, all dependencies are installed automatically using conda when running the pipeline for the first time, except for InterProScan due to its large databse size and the possibility to include licensed components (SignalP and TMHMM). InterProScan therefore has to be downloaded separately and the path to its folder (the folder containing `interproscan.sh`) has to be adapted in `config/config.yml`. To install InterProScan, follow the [official instructions](https://interproscan-docs.readthedocs.io/en/v5/HowToDownload.html), including the steps to [install SignalP and TMHMM](https://interproscan-docs.readthedocs.io/en/v5/ActivatingLicensedAnalyses.html). This pipeline was tested with InterProScan 5.59-91.0 and all the corresponding dependencies are automatically installed with conda, but newer versions of InterProScan should also work.
 
@@ -29,7 +41,7 @@ The filenames have to match the `strains` list in `config/config.yaml` (not incl
 ### Static
 An additional subfolder (`data/orthologs`) contains the classification of PE and PPE genes in strain H37Rv ([Ates 2020](https://doi.org/10.1111/mmi.14409)) as a tsv file and the corresponding protein sequences in fasta format. This folder can generally be left unchanged except if the usage of a different or updated classification of PE and PPE genes is desired.
 
-## Running the Analyis
+## Running the Analysis
 Once the input data is ready and Snakemake is installed, the analysis can be started with
 ```
 ./run.sh
