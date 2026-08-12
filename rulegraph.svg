@@ -433,7 +433,7 @@
          x="354.20999"
          y="-879.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text129"
          style="fill:#000000;fill-opacity:1">rbbh_add_best_hit_info</text>
     </g>
@@ -538,7 +538,7 @@
          x="422.20999"
          y="-663.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text164"
          style="fill:#000000;fill-opacity:1">phylo_add_rbbh_subf</text>
     </g>
@@ -600,7 +600,7 @@
          x="354.20999"
          y="-951.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text185"
          style="fill:#000000;fill-opacity:1">rbbh_find_best_reciprocal</text>
     </g>
@@ -643,7 +643,7 @@
          x="406.20999"
          y="-1023.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text199"
          style="fill:#000000;fill-opacity:1">rbbh_get_best_hits_fwd</text>
     </g>
@@ -686,7 +686,7 @@
          x="406.20999"
          y="-1095.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text213"
          style="fill:#000000;fill-opacity:1">rbbh_run_blast_fwd</text>
     </g>
@@ -729,7 +729,7 @@
          x="261.20999"
          y="-1167.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text227"
          style="fill:#000000;fill-opacity:1">rbbh_create_strain_db</text>
     </g>
@@ -772,7 +772,7 @@
          x="263.20999"
          y="-1095.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text241"
          style="fill:#000000;fill-opacity:1">rbbh_run_blast_rev</text>
     </g>
@@ -940,7 +940,7 @@
          x="408.20999"
          y="-1167.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text297"
          style="fill:#000000;fill-opacity:1">rbbh_create_orthologs_db</text>
     </g>
@@ -1002,7 +1002,7 @@
          x="263.20999"
          y="-1023.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text318"
          style="fill:#000000;fill-opacity:1">rbbh_get_best_hits_rev</text>
     </g>
@@ -1065,7 +1065,7 @@
          x="167.21001"
          y="-879.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text339"
          style="fill:#000000;fill-opacity:1">interpro_identify</text>
     </g>
@@ -1643,7 +1643,7 @@
          x="165.21001"
          y="-231.62"
          font-family="Arial"
-         font-size="10px"
+         font-size="11.00"
          id="text535"
          style="fill:#000000;fill-opacity:1">annot_overlap_regions</text>
     </g>
